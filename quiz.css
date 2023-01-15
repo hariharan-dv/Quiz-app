@@ -1,0 +1,245 @@
+/* coding with nick */
+@import url('https://fonts.cdnfonts.com/css/interstate');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Interstate', sans-serif;
+}
+
+body{
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7f7 100%);
+  font-family:  'Interstate', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;   
+}
+
+.start-page{
+    align-items: center;
+    font-size: 28px;
+    padding: 0.2em 0.8em;
+    background-image: url(./images/Quiz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%; 
+    min-width: 50vw;
+    min-height: 50vh;
+    z-index: 15;
+    margin: 0 auto;
+}
+
+main{
+  width: 70%;
+  min-width: 470px;
+  min-height: 275px; 
+  z-index: 10;
+  margin: 0 4em;
+  color: #fff;
+}
+
+.section-intro{
+    font-size: 1em; 
+    padding: 0.75em 3em;
+    overflow-wrap: break-word;
+}
+.section-intro>h1{
+  font-weight: 500;
+}
+
+.section-intro> h5{
+  font-size: 1em;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: .8em;
+  padding: 0;
+  margin: 0;
+}
+
+#quiz-number{
+  padding-top: 0.15em;
+  font-size: 2em;
+  font-family: 'Interstate';
+  font-weight: 800;
+  color: #FFE600;
+  padding-right: 0.3em;
+
+}
+.section-intro> ul{
+  margin: 0.1em;
+  padding: 0 2em;
+  list-style-type: none;
+
+}
+.section-intro> ul>li{ 
+  margin-bottom: 0.5em;
+} 
+
+.form__radio-input {
+  display: none;
+  z-index: 85;
+}
+
+.form__label-radio {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  padding-left: 2rem;
+  z-index: 85;
+}
+.form__label-radio>.options{
+  padding-left: 1em;
+  inline-size: 100%;
+  justify-content: center;
+}
+
+.option-number, .options{
+  padding-left: 1em; 
+}
+
+.form__label-radio>span{
+  padding-left: 1em;
+}
+
+.form__radio-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 0.1em;
+  left: 0;
+  z-index: 85;
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFE600;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 85;
+}
+
+.form__radio-input:checked~.form__label-radio .form__radio-button::after {
+  opacity: 1;
+  z-index: 85;
+}
+ 
+.start-btn{
+  border-radius: 10px;
+  background-color: #c4c4c4;
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  border: none;
+  font-size: 0.6em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.start-btn:hover ,
+.start-btn:active{
+  background-color: #7c7c7c; 
+} 
+
+.submit-btn{
+  margin: 1em 2em;
+}
+
+.navigation-btn{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  bottom: 5vh;
+  width: 80%;
+  gap: 40px;
+}
+
+a{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Check box CSS */
+.container {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.container:hover input ~ .checkmark {
+ scale: 1.2;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #FFE600;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+} 
+
+.hidden{
+  display: none;
+}
+
+ 

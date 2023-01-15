@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    
+    <div class="start-page" id="quiz-content">
+        <main>
+            <section class="section-intro">
+                <h1>Knowledge check questions:</h1>
+                <div style="display: flex;">
+                    <div id="quiz-number">1.</div> <h5 id="quiz-question"> Sub intro heading SuSub intro heading SuSub </h5>
+                </div>
+                <ul id="radio">
+                    <li>
+                        <div>
+                            <input type="radio" name="size" id="a" class="form__radio-input" />
+                            <label class="form__label-radio" for="a" >
+                                <div class="form__radio-button"></div> <span id="answer-number-1">A.</span><div class="options" id="quiz-option-1"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>    
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="radio" name="size" id="b" class="form__radio-input" />
+                            <label class="form__label-radio" for="b" >
+                                <div class="form__radio-button"></div> <span id="answer-number-2">B.</span><div class="options" id="quiz-option-2"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>    
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="radio" name="size" id="c" class="form__radio-input" />
+                            <label class="form__label-radio" for="c" >
+                                <div class="form__radio-button"></div> <span id="answer-number-3">C.</span><div class="options" id="quiz-option-3"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>    
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="radio" name="size" id="d" class="form__radio-input" />
+                            <label class="form__label-radio" for="d" >
+                                <div class="form__radio-button"></div> <span id="answer-number-4">D.</span><div class="options" id="quiz-option-4"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>    
+                            </label>
+                        </div>
+                    </li> 
+                </ul>
+                <ul id="checkbox">
+                    <li>
+                        <label class="container" id="1" >
+                            <input type="checkbox" value="a" name="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="option-number" id="answer-number-1">A.</span> <div class="options" id="quiz-check-option-1"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>  
+                        </label> 
+                    </li>
+                    <li>
+                        <label class="container" id="2">
+                            <input type="checkbox" value="b" name="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="option-number" id="answer-number-2">B.</span> <div class="options" id="quiz-check-option-2"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>  
+                        </label> 
+                    </li>
+                    <li>
+                        <label class="container" id="3">
+                            <input type="checkbox" value="c" name="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="option-number" id="answer-number-3">C.</span> <div class="options" id="quiz-check-option-3"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>  
+                        </label> 
+                    </li>
+                    <li>
+                        <label class="container" id="4">
+                            <input type="checkbox" value="d" name="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="option-number" id="answer-number-4">D.</span> <div class="options" id="quiz-check-option-4"> Lorem ipsum dolor sit amet consectetur laboriosam orem ipsum dolor sit amet consectetur laboriosam velit!</div>  
+                        </label> 
+                    </li> 
+                </ul>
+                <div class="submit-btn">
+                    <button class="start-btn" id="start-btn" title="Choose atleast once choice to submit">submit</button>
+                </div>
+            </section>
+            <div class="navigation-btn" style="visibility:hidden">
+                <a type="button" id="prev-btn">
+                <img src="./images/Previous_Button.png" alt="Previous" />
+                </a>  
+                <a type="button" id="next-btn" style="visibility:hidden">
+                <img src="./images/Next_Button.png" alt="Next" />
+                </a>  
+            </div>
+        </main>
+    </div>
+    
+    <script src="index.js" defer></script>
+</body>
+</html>
